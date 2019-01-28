@@ -8,17 +8,17 @@ namespace Algorithms
 {
     public static class LinearSearch
     {
-        public static int search(int[] inputArray, int elementToSearch)
+        public static string search(int[] inputArray, int elementToSearch)
         {
-            int i;
-            for (i = 0; i < inputArray.Length; i++)
+            List<string> output = new List<string>();
+            for (int j = 0; j < inputArray.Length - 1; j++)
             {
-                if (inputArray[i] == elementToSearch)
+                if (inputArray[j] > elementToSearch)
                 {
-                    return i;
+                    output.Add(inputArray[j].ToString());
                 }
             }
-            return -1;
+            return string.Join(",", output);
         }
     }
 }

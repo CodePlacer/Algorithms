@@ -11,9 +11,10 @@ namespace Algorithms
         static void Main(string[] args)
         {
             //LINEAR SEARCH
-            int[] arr = { 1, 10, 30, 15 };
+            int[] arr = { 1, 10, 30, 15, 23, 44, 62, 1, 4, 8, 6, -6 };
             int x = 30;
-            Console.WriteLine("Linear Search Algorithm : " + x + " is present at index " + LinearSearch.search(arr, x));
+            Console.WriteLine("Given Number : " + x );
+            Console.WriteLine("Linear Search Algorithm Result : " + LinearSearch.search(arr, x) + " is/are greater than " + x);
             Console.Read();
         }
     }
